@@ -300,7 +300,7 @@ This article has an online data supplement, which is accessible from this issue'
 
 #INTRODUCTION
 
-The development of safe and effective vaccines to protect young children against respiratory syncytial virus (RSV) illness is a global health priority (1,2). RSV is a major cause of lower respiratory infections (LRI) among young children globally (3,4). While nearly all children will have been infected by RSV by two years of age,^5^ the infections during the first months of life can be the most severe (6). In addition to its acute effects, early childhood RSV illness has been associated with subsequent development of wheeze-associated disorders later in life (7,8). Vaccination of pregnant women against RSV may protect their infants against RSV illness during their first months of life, primarily through maternal antibodies transported across the placenta (1). While licensure of RSV vaccines for use during pregnancy is likely to be sought for the primary indication of preventing acute RSV illness in young infants, the public health value of maternal RSV vaccines would be greater if the vaccine also prevented wheeze-associated disorders (1). Studies to assess the effects of RSV prevention on these childhood respiratory outcomes have been recommended by experts convened by the Bill & Melinda Gates Foundation,^7^ the Lancet (9), and the World Health Organization (WHO) (10). However, the sample sizes required to detect an effect on such outcomes in randomized clinical trials (RCTs) have not been calculated. 
+The development of safe and effective vaccines to protect young children against respiratory syncytial virus (RSV) illness is a global health priority (1,2). RSV is a major cause of lower respiratory infections (LRI) among young children globally (3,4). While nearly all children will have been infected by RSV by two years of age (5), the infections during the first months of life can be the most severe (6). In addition to its acute effects, early childhood RSV illness has been associated with subsequent development of wheeze-associated disorders later in life (7,8). Vaccination of pregnant women against RSV may protect their infants against RSV illness during their first months of life, primarily through maternal antibodies transported across the placenta (1). While licensure of RSV vaccines for use during pregnancy is likely to be sought for the primary indication of preventing acute RSV illness in young infants, the public health value of maternal RSV vaccines would be greater if the vaccine also prevented wheeze-associated disorders (1). Studies to assess the effects of RSV prevention on these childhood respiratory outcomes have been recommended by experts convened by the Bill & Melinda Gates Foundation,^7^ the Lancet (9), and the World Health Organization (WHO) (10). However, the sample sizes required to detect an effect on such outcomes in randomized clinical trials (RCTs) have not been calculated. 
 
 Wheeze-associated disorders in childhood are a common cause of morbidity globally. Wheezing can be severe and can lead to decreased quality of life, frequent healthcare utilization, and high economic costs in young children (9, 11-13). Recurrent wheezing may resolve as children age, but for others, the symptoms can persist (11,13). The diagnosis of asthma as a cause of recurrent wheezing cannot be objectively made using lung function until about 5 years of age (7,11). Definitions for recurrent childhood wheezing typically include multiple episodes of wheezing since birth among children younger than 5 years of age (8,14,15). 
 
@@ -486,7 +486,7 @@ The sample size requirements increase as a function of vaccine effect size ($RR_
 
 **Figure 3. Minimal sample size required (per trial arm) to detect a difference in recurrent childhood wheezing for mother-infant pairs vaccinated against RSV under a 1:1 allocation scheme across several scenarios**
 
-```{r make-and-save-figure-3, fig.height=9.5, fig.height=4, echo=F}
+```{r make-and-save-figure-3, fig.width=9.5, fig.height=4, echo=F, warning=F}
 
 # Note that the warning specifies that we're linking the size (area) of the 
 # plotting point to the `RR.wheeze.rsvh` but that we're treating this variable as 
@@ -543,7 +543,7 @@ summary.NNT <- scenarios %>%
 
 **Figure 4. Number needed to vaccinate to prevent one case of recurrent childhood wheezing under a 1:1 allocation scheme across several scenarios**
 
-```{r make-and-save-figure-4, fig.height=9.5, fig.height=4, echo=F}
+```{r make-and-save-figure-4, fig.width=9.5, fig.height=4, echo=F, warning=F}
 figure.4 <- ggplot(scenarios, 
                    aes(y = NNT, x = RR.wheeze.vacc)) + 
   geom_line(aes(linetype = factor(baseline.risk.wheeze))) +
@@ -702,7 +702,7 @@ scenarios %>%
          `Total sample size required under 1:1 randomization` = sample.total.1.1,
          `Total sample size required under 2:1 randomization` = sample.total.2.1,
          `Number needed to vaccinate` = NNT,
-         `Plausibility?` = plausible) %>% View()
+         `Plausibility?` = plausible) %>% knitr::kable()
 ```
 
 Notes: 
