@@ -1,7 +1,7 @@
-## Informing randomized clinical trials of respiratory syncytial virus vaccination during pregnancy to prevent recurrent childhood wheezing: a sample size analysis
+# Informing randomized clinical trials of respiratory syncytial virus vaccination during pregnancy to prevent recurrent childhood wheezing: a sample size analysis
 ### [Corinne A Riddell](corinneriddell.com), Bhat N, Bont LJ, Dupont WD, Feikin DR, Fell DB, Gebretsadik T, Hartert TV, Hutcheon JA, Karron RA, Nair H, Reiner RC, Shi T, Sly PD, Stein RT, Wu P, Zar HJ, Ortiz JR for the WHO Technical Working Group on Respiratory Syncytial Virus Vaccination During Pregnancy to Prevent Recurrent Childhood Wheezing
 
-### Project overview
+# Project overview
 
 This repository contains all of the data and code that goes alongside the manuscript "Informing randomized clinical trials of respiratory syncytial virus vaccination during pregnancy to prevent recurrent childhood wheezing: a sample size analysis" by Riddell et al. The manuscript is currently under review at the *American Journal of Respiratory and Critical Care Medicine* (AJRCCM).
 
@@ -23,7 +23,7 @@ The Data directory stores the analytic datasets that are created and saved as ou
 
 The Plots/ directory stores the manuscript figures 2-4. Figure 1 is a conceptual causal diagram that is store as an image in the Images/ directory. 
 
-## How to replicate these analyses
+# How to replicate these analyses
 
 If your intention is to replicate our analysis and you are familiar with GitHub, please clone this repository. All of the analysis is contained within the files "Code/1_create-dataset-and-analyze" and "Code/2_manuscript-and-figures", and you can run these files within RStudio by running all of the code chunks within these R markdown documents. Remember first to open the .Rproj file within RStudio so that all of the relative pathways are correct.
 
