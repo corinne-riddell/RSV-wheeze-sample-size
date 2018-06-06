@@ -1,0 +1,1 @@
+This repository contains all of the data and code that goes alongside the manuscript "Informing randomized clinical trials of respiratory syncytial virus vaccination during pregnancy to prevent recurrent childhood wheezing: a sample size analysis" by Riddell et al.
