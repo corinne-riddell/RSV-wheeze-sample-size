@@ -3,7 +3,7 @@
 
 # Project overview
 
-This repository contains all of the data and code that goes alongside the manuscript "Informing randomized clinical trials of respiratory syncytial virus vaccination during pregnancy to prevent recurrent childhood wheezing: a sample size analysis" by Riddell et al. The manuscript is currently under review at the *American Journal of Respiratory and Critical Care Medicine* (AJRCCM).
+This repository contains all of the data and code that goes alongside the manuscript "Informing randomized clinical trials of respiratory syncytial virus vaccination during pregnancy to prevent recurrent childhood wheezing: a sample size analysis" by Riddell et al. The manuscript is currently [In press at *Vaccine*](https://www.sciencedirect.com/science/article/pii/S0264410X18314075).
 
 The objective of this paper was to estimate sample size requirements for studies of maternal RSV vaccination during pregnancy, under plausible scenarios in which maternal vaccination prevents early infant RSV. Under a variety of scenarios, we assume that the prevention of early infant RSV prevents development of childhood wheezing illness and estimate the sample size required to observe such a causal effect.
 
@@ -13,7 +13,7 @@ The objective of this paper was to estimate sample size requirements for studies
 
 The Code folder contains the two analysis files: Code/1_create-dataset-and-analyze creates the analytic dataset defined by the combination of parameter scenarios. For each scenario, we calculate the require sample size and the number of mother-infant pairs who need to be vaccinated to prevent one case of childhood wheezing illness.
 
-Code/2_manuscript-and-figures contains the manuscript text, and the codes to summarize our findings and produce the figures and tables. It also contains the supplementary tables. The .Rmd version shows the code and the .md version contains the rendered tables that are formatted for online viewing.
+Code/2_manuscript-and-figures contains the manuscript text, and the codes to summarize our findings and produce the figures and tables. It also contains the supplementary tables. The .Rmd version shows the code and the .md version contains the rendered tables that are formatted for online viewing. **Note**: The manuscript is an earlier version and so is slightly different from the version [in press at *Vaccine*](https://www.sciencedirect.com/science/article/pii/S0264410X18314075). None of the results have changed, but the text has been updated in the version in press.
 
 ### Data/ directory
 
